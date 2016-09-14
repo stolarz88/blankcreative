@@ -1,0 +1,105 @@
+/*
+	A collection of reusable functions and mixins
+ */
+/*==========
+	SIZE FUNCTIONS
+ ==========*/
+makeEms(goal, base = 20){
+	(goal / base) * 1em;
+}
+makeRems(goal, base = 20){
+	(goal / base) * 1rem;
+}
+/*==========
+	LAYOUT
+ ==========*/
+mainColumn(){
+	width 100%
+	max-width 1280px
+	margin 0 auto	
+}
+mediumColumn(){
+	width (583 / 640) * 100%
+	max-width 1180px
+	margin 0 auto	
+}
+smallColumn(){
+	width (583 / 640) * 100%
+	max-width 790px
+	margin 0 auto		
+}
+lastRow(){
+	background $grey
+	padding makeRems(65) 0
+}
+/*==========
+	TRICKS
+ ==========*/
+hideText(){
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+PSLetterSpacing(val){
+	letter-spacing: (val / 1000) * 1em	
+}
+ulReset(){
+	padding 0
+	list-style: none
+}
+/*==========
+	FONTS
+ ==========*/
+// font_regular(){
+// 	font-family: 'Helvetica57', Helvetica, Ariel, sans-serif;
+// }
+// font_regular_italic(){
+// 	font-family: 'Helvetica57Italic', Helvetica, Ariel, sans-serif;
+// }
+// font_bold(){
+// 	font-family: 'Helvetica67', Helvetica, Ariel, sans-serif;
+// }
+// font_bold_italic(){
+// 	font-family: 'Helvetica67Italic', Helvetica, Ariel, sans-serif;
+// }
+/*==========
+	TEXT
+ ==========*/
+headline_large(){
+	font-size makeRems(77.13);
+	line-height makeEms(109.07, 77.13);
+	font_bold()
+}
+headline_regular(){
+	font-size makeRems(40);
+	line-height makeEms(44,40);
+	font_bold()
+}
+headline_small(){
+	font-size makeRems(30);
+	line-height makeEms(36,30);
+	font_bold()
+}
+headline_small_normal(){
+	font-size makeRems(30);
+	line-height makeEms(36,30);
+	font_regular()
+}
+headline_mobile_regular(){
+	font-size makeRems(30);
+	line-height makeEms(34,30);
+}
+headline_mobile_small(){
+	font-size makeRems(20);
+	line-height makeEms(24,20);
+}
+button_text(){
+	font-size makeRems(24)
+	line-height makeEms(28,40)
+	PSLetterSpacing(40)
+}
+small_text(){
+	font-size makeRems(18);
+	line-height makeEms(26,18)
+}
+

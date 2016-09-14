@@ -1,0 +1,195 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#header {
+  height: 90px;
+  display: block;
+  background: #171c23;
+}
+#header .container {
+  position: relative;
+  margin: 0px auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+#header .container .logo {
+  padding: 8px;
+  display: flex;
+}
+#header .container h2 {
+  font-size: 2rem;
+  line-height: 1.1em;
+  color: #fff;
+  padding: 0.6em;
+}
+#header .container #menu {
+  border-right: 1px solid #2c323c;
+}
+#header .container #menu ul {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+}
+#header .container #menu li {
+  border-left: 1px solid #2c323c;
+  height: 63px;
+  display: flex;
+}
+#header .container #menu li:hover ul {
+  display: block;
+  visibility: visible;
+}
+#header .container #menu li a {
+  font-size: 16px;
+  color: #fff;
+  align-items: center;
+  padding: 1.2em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+#header .container #menu li a:hover {
+  background: #068fd5;
+}
+#header .container #menu li ul {
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 90px;
+  width: auto;
+  font-size: 0.05em;
+  display: none;
+  visibility: hidden;
+  box-shadow: none;
+}
+#header .container #menu li ul li {
+  background: #333;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  border: 0px;
+}
+#header .container #menu li ul li:hover {
+  background: #1a1e25;
+}
